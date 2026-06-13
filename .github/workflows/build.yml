@@ -1,0 +1,32 @@
+name: Build Mod
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Set up JDK 8
+      uses: actions/setup-java@v2
+      with:
+        java-version: '8'
+        distribution: 'adopt'
+    
+    - name: Build with Gradle
+      run: |
+        chmod +x gradlew
+        ./gradlew build
+    
+    - name: Upload JAR
+      if: success()
+      uses: actions/upload-artifact@v2
+      with:
+        name: MagicalGirls-1.0
+        path: build/libs/*.jar
