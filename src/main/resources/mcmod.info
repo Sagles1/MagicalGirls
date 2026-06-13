@@ -1,0 +1,14 @@
+[{
+  "modid": "magicalgirls",
+  "name": "Magical Girls",
+  "description": "A mod adding magical girl companions to Minecraft for RLcraft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Sagles1"],
+  "credits": "Magical Girls Mod",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}]
