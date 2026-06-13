@@ -1,0 +1,32 @@
+# Forge
+bin/
+build/
+.gradle/
+eclipse/
+run/
+
+# IDE
+.classpath
+.project
+.settings/
+*.launch
+
+# IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gradle
+.gradle
+gradle-app.setting
+
+# Others
+.metadata
+*.swp
+*.swo
+*~
